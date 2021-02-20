@@ -40,8 +40,4 @@ public class QuizUnitThree {
 			JOptionPane.showMessageDialog(null,"Incorrect. The correct answer is "+correctAnswer+".");
 			}
 		}
-	
-	public static void main(String[] args) {
-		
-		}
 	}
