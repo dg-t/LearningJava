@@ -148,12 +148,108 @@ public class MainLearningJava {
 		
 		// discussion
 		// Create a student object from the Student subclass with the inherited information from the Person superclass
+		/*
 		Student studentOne = new Student("Robert", 25, true);
+		*/
 		
 		// Show work output from the subclass with the information from the subclass
+		/*
 		studentOne.work();
+		*/
 		// Show hairColor output from the subclass with the information from the superclass
+		/*
 		studentOne.hairColor();
+		*/
+		
+
+		// Written assignment
+		
+		// construct and use "MultipleChoiceQuestion" object.
+		// Question One
+		Question question = new MultipleChoiceQuestion(
+				"What is a lion?",  
+				"The king of the forrest.", 
+				"The king of the lake.", 
+				"The king of the world.", 
+				"The king of the jungle.",
+				"A prince.", 
+				"d");
+		question.check();
+		
+		
+		// Question Two
+		question = new MultipleChoiceQuestion(
+				"Who is the biggest mammal in the world?", 
+				"Blue whale.", 
+				"Hamster.", 
+				"Elephant.", 
+				"Tiger.", 
+				"Seagle.", 
+				"a");
+		question.check();
+		
+		
+		// Question Three
+		question = new MultipleChoiceQuestion(
+				"What is Java?", 
+				"A chocolate box.", 
+				"A programming language.", 
+				"A laptop.", 
+				"Some kind of food.", 
+				"The name of a city.", 
+				"b");
+		question.check();
+		
+		
+		
+		// Question Four
+		question = new MultipleChoiceQuestion(
+				"Who is James Gosling?", 
+				"A doctor.", 
+				"A chef.", 
+				"The founder of Java.", 
+				"A detective.", 
+				"The name of a car.", 
+				"c");
+		question.check();
+		
+		
+		// Question Five
+		question = new MultipleChoiceQuestion(
+				"Who was Plato?", 
+				"A philosopher.", 
+				"An actor.", 
+				"A singer.", 
+				"A football player.", 
+				"A movie director.", 
+				"a");
+		question.check();
+		
+		
+		// construct and use "TrueFalseQuestion" object.
+		// Question One
+		Question booleanQuestion = new TrueFalseQuestion("Is Java fun?", "True");
+		booleanQuestion.check();
+		
+		// Question Two
+		booleanQuestion = new TrueFalseQuestion("Is learning bad?", "FALSE");
+		booleanQuestion.check();
+		
+		// Question Three
+		booleanQuestion = new TrueFalseQuestion("Are kttiens cute?", "t");
+		booleanQuestion.check();
+		
+		// Question Four
+		booleanQuestion = new TrueFalseQuestion("Is the sun green?", "n");
+		booleanQuestion.check();
+				
+		// Question Five
+		booleanQuestion = new TrueFalseQuestion("Is the universe big?", "yes");
+		booleanQuestion.check();
+		
+		
+		// Show correct answer result
+		Question.showResults();
 		
 		
 	}
