@@ -72,7 +72,7 @@ public class MainLearningJava {
 		
 		// construct and use "MultipleChoiceQuestion" object.
 		// Question One
-		MultipleChoiceQuestion question = new MultipleChoiceQuestion(
+		/*MultipleChoiceQuestion question = new MultipleChoiceQuestion(
 				"What is a lion?",  
 				"The king of the forrest.", 
 				"The king of the lake.", 
@@ -81,8 +81,10 @@ public class MainLearningJava {
 				"A prince.", 
 				"d");
 		question.check();
+		*/
 		
 		// Question Two
+		/*
 		question = new MultipleChoiceQuestion(
 				"Who is the biggest mammal in the world?", 
 				"Blue whale.", 
@@ -92,8 +94,10 @@ public class MainLearningJava {
 				"Seagle.", 
 				"a");
 		question.check();
+		*/
 		
 		// Question Three
+		/*
 		question = new MultipleChoiceQuestion(
 				"What is Java?", 
 				"A chocolate box.", 
@@ -103,8 +107,10 @@ public class MainLearningJava {
 				"The name of a city.", 
 				"b");
 		question.check();
+		*/
 		
 		// Question Four
+		/*
 		question = new MultipleChoiceQuestion(
 				"Who is James Gosling?", 
 				"A doctor.", 
@@ -114,8 +120,10 @@ public class MainLearningJava {
 				"The name of a car.", 
 				"c");
 		question.check();
+		*/
 		
 		// Question Five
+		/*
 		question = new MultipleChoiceQuestion(
 				"Who was Plato?", 
 				"A philosopher.", 
@@ -125,9 +133,28 @@ public class MainLearningJava {
 				"A movie director.", 
 				"a");
 		question.check();
+		*/
 		
 		// Show correct answer result
+		/*
 		MultipleChoiceQuestion.showResults();
+		*/
+		
+		
+		
+		////////////////////////
+		// UNIT 5
+		////////////////////////
+		
+		// discussion
+		// Create a student object from the Student subclass with the inherited information from the Person superclass
+		Student studentOne = new Student("Robert", 25, true);
+		
+		// Show work output from the subclass with the information from the subclass
+		studentOne.work();
+		// Show hairColor output from the subclass with the information from the superclass
+		studentOne.hairColor();
+		
 		
 	}
 
