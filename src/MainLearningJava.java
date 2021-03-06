@@ -166,6 +166,7 @@ public class MainLearningJava {
 		
 		// construct and use "MultipleChoiceQuestion" object.
 		// Question One
+		/*
 		Question question = new MultipleChoiceQuestion(
 				"What is a lion?",  
 				"The king of the forrest.", 
@@ -201,7 +202,6 @@ public class MainLearningJava {
 		question.check();
 		
 		
-		
 		// Question Four
 		question = new MultipleChoiceQuestion(
 				"Who is James Gosling?", 
@@ -213,7 +213,6 @@ public class MainLearningJava {
 				"c");
 		question.check();
 		
-		
 		// Question Five
 		question = new MultipleChoiceQuestion(
 				"Who was Plato?", 
@@ -224,10 +223,11 @@ public class MainLearningJava {
 				"A movie director.", 
 				"a");
 		question.check();
-		
+		*/
 		
 		// construct and use "TrueFalseQuestion" object.
 		// Question One
+		/*
 		Question booleanQuestion = new TrueFalseQuestion("Is Java fun?", "True");
 		booleanQuestion.check();
 		
@@ -250,8 +250,21 @@ public class MainLearningJava {
 		
 		// Show correct answer result
 		Question.showResults();
+		*/
 		
 		
+		
+		////////////////////////
+		// UNIT 6
+		////////////////////////
+		
+		// Discussion
+		/*
+	     * In the main method we are simply creating a new MouseWhisperer object. 
+	     * This will automatically run the class constructor, and as the MouseListener interface is in the constructor, 
+	     * it will run the mouse methods above depending on the mouse action performed.
+	     */
+		new MouseWhisperer();
 	}
 
 }
