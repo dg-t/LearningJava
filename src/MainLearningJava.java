@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 import javax.swing.JOptionPane;
 
 public class MainLearningJava {
@@ -264,7 +266,40 @@ public class MainLearningJava {
 	     * This will automatically run the class constructor, and as the MouseListener interface is in the constructor, 
 	     * it will run the mouse methods above depending on the mouse action performed.
 	     */
+		
+		/*
 		new MouseWhisperer();
+		*/
+		
+		
+		////////////////////////
+		// UNIT 7
+		////////////////////////
+		
+		// Discussion
+		
+		// Autoboxing
+		/*
+		ArrayList<Integer> ages= new ArrayList<Integer>();   
+		int age = 31;   
+		// ages.add(Integer.valueOf(age)); 
+		ages.add(age); 
+
+		System.out.println(ages); 
+				
+
+		// Unboxing
+		ArrayList<Integer> weights = new ArrayList<Integer>();   
+		int myweight = 75;   
+		weights.add(myweight);   
+		// int retriveMyWeight = weights.get(0).intValue();  
+		int retriveMyWeight = weights.get(0); 
+
+		System.out.println(retriveMyWeight); 
+		*/
+		
+		
+		
 	}
 
 }
