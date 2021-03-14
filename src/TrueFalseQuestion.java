@@ -1,37 +1,26 @@
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
 public class TrueFalseQuestion extends Question {
 	
-	// Add ask() method for TRUE or FALSE questions
-	@Override
-	String ask() {
-		
-		while (true) {
-			// Store answer in upper case
-			String answer = JOptionPane.showInputDialog(question);
-			answer = answer.toUpperCase();
-			boolean valid = (answer.equals("F") || answer.equals("FALSE") || answer.equals("N") || answer.equals("NO") || 
-								answer.equals("T") || answer.equals("TRUE") || answer.equals("Y") || answer.equals("YES"));
-					
-			// Check if answer is valid or not. If valid return answer
-			if (valid) {
-				if (answer.equals("F") || answer.equals("FALSE") || answer.equals("N") || answer.equals("NO")) {
-					answer = "FALSE";
-				}
-				else {
-					answer = "TRUE";
-				}
-				return answer;
-			}
-			JOptionPane.showMessageDialog(null,"Invalid answer. Please enter TRUE or FALSE.");
-		}
-		
-		
-	}
-	
 	// constructor
 	TrueFalseQuestion (String question, String answer) {
-		this.question = "TRUE or FALSE: " + question;
+		
+		// Call Question constructor
+		super(question);
+		
+		// Create a new "JPanel" to organize the true/false buttons
+		JPanel buttons = new JPanel();
+		// Add TRUE button
+		addButton(buttons,"TRUE");
+		// Add FALSE button
+		addButton(buttons,"FALSE");
+		// Add button to the dialog box
+		this.question.add(buttons);
+		
+		// Call initQuestionDialog to make the question modal, set its size, and set its position
+		initQuestionDialog();
+		
+		// make answer to uppercase to facilitate validation
 		answer = answer.toUpperCase();
 		
 		if (answer.equals("T") || answer.equals("TRUE") || answer.equals("Y") || answer.equals("YES")) {
@@ -39,5 +28,14 @@ public class TrueFalseQuestion extends Question {
 		} else {
 			this.correctAnswer = "FALSE";
 		}
+	}
+	
+	void addButton(JPanel buttons, String label) { 
+		// Create new button
+		JButton button = new JButton(label);
+		// Add listener to connect button with the question
+		button.addActionListener(question);
+		// Add button to panel
+		buttons.add(button);
 	}
 }
